@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
+  <wpt lat="69.394058" lon="26.082253">
+    <time>2012-10-23T15:57:21Z</time>
+    <name>Basisjavri KO</name>
+    <sym>Campground</sym>
+  </wpt>
+  <wpt lat="68.939201" lon="26.81179">
+    <time>2012-10-23T15:57:21Z</time>
+    <name>Riutula LA</name>
+    <sym>Picnic Area</sym>
+  </wpt>
+  <wpt lat="69.358391" lon="25.814316">
+    <time>2012-12-21T10:00:07Z</time>
+    <name>Cahppesguoika KO</name>
+    <cmt>Kuva JuhaL.</cmt>
+    <sym>Campground</sym>
+  </wpt>
+  <wpt lat="69.232628" lon="26.698099">
+    <time>2014-01-30T04:47:31Z</time>
+    <name>Jeageloavi kota</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.228981" lon="26.34914">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Kiellaroaivi - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.922813" lon="26.414">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Kruununtupa - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.030563" lon="26.06637">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Kurtojoki - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.18837" lon="26.69021">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Lahtinen - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.161263" lon="26.101049">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Porttikaltio - PK</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.293472" lon="25.95116">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Ramada Presidentti - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.28022" lon="26.250151">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Riekonpyytaja - KA</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.069229" lon="26.4772">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Saarilompolo - KA</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.235863" lon="26.04287">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Stuorraäytsi - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.109894" lon="26.589951">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Villa Sulo - KA</name>
+    <sym>Lodge</sym>
+  </wpt>
+</gpx>

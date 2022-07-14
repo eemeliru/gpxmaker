@@ -1,0 +1,197 @@
+#!/usr/bin/python3
+
+__author__ = "Eemeli Ruohio"
+__version__ = "0.1"
+
+import pathlib
+from pathlib import Path
+import argparse
+from datetime import datetime
+from pprint import pprint
+import gpxpy
+import yaml
+
+def load_templates():
+    conf = {}
+    for p in pathlib.Path('./templates').iterdir():
+        if p.suffix == '.yaml' or p.suffix == '.yml':
+            with open(p, 'r') as yaml_file:
+                new = yaml.safe_load(yaml_file)
+            conf = {**conf, **new}
+    return conf
+
+TEMPLATES = load_templates()
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Tool for combining and filtering .gpx files.")
+    parser.add_argument('--path', '-p', type=str, default='./samples', 
+        help="Path to gpx file(s). Defaults to ./samples")
+    parser.add_argument('--include-path', '-i', dest='include', action='store_true', default=False, 
+        help="If custom path is provided, use also files from the ./samples -folder.")
+    parser.add_argument('--name', '-n', type=str, default='new', 
+        help="Name of the output gpx file. Defaults to 'new' OR chosen template name.")
+    parser.add_argument('--coordinates', '-c', nargs='+', 
+        help="Coordinates for waypoints. Give in format North South West East or Latitude Longitude, if saving waypoint.")
+    parser.add_argument('--template', '-t', choices=TEMPLATES.keys(), 
+        help="Choose coordinates from already defined templates.")
+    parser.add_argument('--save', '-s', choices=['template', 'waypointAT', 'waypointLK', 'custom'], 
+        help="Save coordinates as new template or waypoint. Uses --name as template/waypoint name. waypointAT = Autiotuvat, waypointLK = Laavut-kodat.")
+    parser.add_argument('--description', '-d', type=str, 
+        help="Description for new waypoint. Optional.")
+    parser.add_argument('--just-print', dest='printer', action='store_true', default=True, 
+        help="Don't save .gpx, just print result to stdout/console.")
+    parser.add_argument('--search', '-S', type=str, 
+        help="Search if waypoint is in .gpx -folder.")
+    parser.add_argument('--verbose', '-v', action='store_true', default=False, 
+        help="Verbose output.")
+    args = parser.parse_args()
+    return args
+
+def read_gpx(gpx: gpxpy.gpx.GPX, path: str):
+    """Read a gpx file and concats it's content to the given gpx."""
+    with open(path) as gpx_file:
+        old_gpx = gpxpy.parse(gpx_file)
+    for waypoint in old_gpx.waypoints:
+        gpx.waypoints.append(waypoint)
+    return gpx
+
+def read_gpxes(path: str) -> gpxpy.gpx.GPX:
+    """Handles reading & concatenating of all gpx files from the given path."""
+    gpx = gpxpy.gpx.GPX()
+    for p in pathlib.Path(path).iterdir():
+        if p.suffix == '.gpx':
+            gpx = read_gpx(gpx, p)
+    return gpx
+
+def search_gpx(gpx: gpxpy.gpx.GPX, searched: str):
+    """Simple waypoint search from gpx."""
+    results = {}
+    for waypoint in gpx.waypoints:
+        if searched.lower() in waypoint.name.lower():
+            results[waypoint.name] = {
+                'latitude': waypoint.latitude, 
+                'longitude': waypoint.longitude, 
+                'updated': datetime.strftime(waypoint.time, '%Y-%m-%d %H:%M:%S'),
+                'description': waypoint.description, 
+                'comment': waypoint.comment
+            }
+    if len(results) > 0:
+        print("Found one or more likely matches:")
+        pprint(results)
+    else:
+        print("No matches found.")
+
+def filter_coordinates(gpx: gpxpy.gpx.GPX, coordinates: dict):
+    """Selects waypoints inside of given coordinates."""
+    filtered = gpxpy.gpx.GPX()
+    for waypoint in gpx.waypoints:
+        if (waypoint.latitude <= coordinates['N'] and 
+            waypoint.latitude >= coordinates['S'] and 
+            waypoint.longitude >= coordinates['W'] and 
+            waypoint.longitude <= coordinates['E']):
+            filtered.waypoints.append(waypoint)
+    if verbose:
+        print(f"Filtered from {len(gpx.waypoints)} waypoints to {len(filtered.waypoints)} waypoints!")
+
+    return filtered
+
+def save_template(coordinates: dict, filename: str):
+    with open(f'./templates/{filename}.yml', 'w+') as yaml_file:
+        yaml.dump(coordinates, yaml_file)
+    print(f"New template {filename}.yml saved!")
+
+def save_gpx(gpx: gpxpy.gpx.GPX, output: str, printer: bool, path: str = 'results'):
+    """Save gpx to a single file. Or if param --just-print is given, prints the gpx."""
+    if printer:
+        #if file already exists, read the file and add our gpx to it
+        if Path(f'{path}/{output}.gpx').exists():
+            gpx = read_gpx(gpx, f'{path}/{output}.gpx')
+
+        with open(f'{path}/{output}.gpx', 'w+') as gpx_file:
+            gpx_file.write(gpx.to_xml())
+
+        print(f'Success, saved as {output}.gpx!')
+    else:
+        print('Just printing the output...\n')
+        print(gpx.to_xml())
+
+def main():
+    args = parse_args()
+    # make verbose global
+    global verbose 
+    verbose = args.verbose
+    # rest of params
+    path = args.path
+    name = args.name
+    printer = args.printer
+    coordinates = False
+
+    if args.coordinates is not None:
+        # save waypoint, assume coordinates are [Latitude, Longitude]
+        if args.save == 'waypointAT' or args.save == 'waypointLK' or args.save == 'custom':
+            gpx = gpxpy.gpx.GPX()
+            # append coordinates, name, desc to the gpx file. 
+            # uses datetime.now() as timestamp.
+            gpx.waypoints.append(
+                gpxpy.gpx.GPXWaypoint(
+                    latitude=args.coordinates[0], 
+                    longitude=args.coordinates[1], 
+                    time=datetime.now(), 
+                    name=name, 
+                    description=args.description,
+                    comment=args.description))
+            if args.save == 'waypointAT':
+                save_gpx(gpx, 'Autiotuvat', printer, path)
+            elif args.save == 'waypointLK':
+                save_gpx(gpx, 'Laavut-kodat', printer, path)
+            else:
+                save_gpx(gpx, name, printer, path)
+            raise SystemExit()
+        # else assume coordinates are [North, South, West, East]
+        else:
+            coordinates = {
+                'N': float(args.coordinates[0]),
+                'S': float(args.coordinates[1]),
+                'W': float(args.coordinates[2]),
+                'E': float(args.coordinates[3])
+            }
+        # save as a new template
+        if args.save == 'template':
+            template = {name: coordinates}
+            save_template(template, name)
+
+    # assign coordinates from the template
+    if args.template is not None:
+        if name == 'new':
+            name = args.template
+        coordinates = TEMPLATES[args.template]
+        if verbose:
+            print(f'Template {args.template} selected!')
+    if verbose:
+        print(f"Arguments OK, starting to read files!")
+
+    # read the .gpx files from given path -folder
+    gpx = read_gpxes(path)
+
+    # if user wants to include files in /samples -folder
+    if args.include:
+        samples = read_gpxes(path)
+        for waypoint in samples.waypoints:
+            gpx.waypoints.append(waypoint)
+
+    if args.search is not None:
+        search_gpx(gpx, args.search)
+        raise SystemExit()
+    # if user has given coordinates or template, filter results
+    # else just move on to save/print results
+    if coordinates:
+        if verbose:
+            print(f'Coordinates given, filtering results!')
+            print(f'Using coordinates: {coordinates}')
+        gpx = filter_coordinates(gpx, coordinates)
+
+    # save or print the results
+    save_gpx(gpx, name, printer)
+
+if __name__ == '__main__':
+    main()

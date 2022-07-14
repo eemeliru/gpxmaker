@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
+  <wpt lat="69.612297" lon="29.021233">
+    <time>2012-10-23T15:57:21Z</time>
+    <name>Lauttajärvi LA</name>
+    <sym>Picnic Area</sym>
+  </wpt>
+  <wpt lat="69.595665" lon="28.955652">
+    <time>2012-10-23T15:57:21Z</time>
+    <name>Pikku Kirakkajärvi LA</name>
+    <sym>Picnic Area</sym>
+  </wpt>
+  <wpt lat="70.070236" lon="27.60107">
+    <time>2012-10-23T15:57:22Z</time>
+    <name>Joensuu LA</name>
+    <sym>Picnic Area</sym>
+  </wpt>
+  <wpt lat="69.361351" lon="28.583609">
+    <time>2013-06-01T20:18:30Z</time>
+    <name>Suolistaipale KO</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.514732" lon="27.43059">
+    <time>2014-01-30T04:52:01Z</time>
+    <name>Johttejàvri kota</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="70.054176" lon="27.85479">
+    <time>2014-01-31T18:52:41Z</time>
+    <name>Skaidejàvri KO</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.907303" lon="27.498199">
+    <time>2014-01-31T18:54:38Z</time>
+    <name>Vuoguli KO</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.713493" lon="28.224689">
+    <time>2014-01-31T18:56:59Z</time>
+    <name>Skietsaras KO</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.691628" lon="28.799049">
+    <time>2014-02-02T13:22:07Z</time>
+    <name>Harripuljo</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.707047" lon="28.98493">
+    <time>2014-02-02T13:28:28Z</time>
+    <name>Kalliokoski U LA</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.607063" lon="28.511049">
+    <time>2014-02-02T13:40:21Z</time>
+    <name>Opukasköngäs LA</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.638924" lon="28.738001">
+    <time>2014-02-02T13:50:17Z</time>
+    <name>Saunakoski LA</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.540367" lon="28.779249">
+    <time>2014-02-02T13:59:08Z</time>
+    <name>Taukolampi LA</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.614983" lon="28.619904">
+    <time>2014-06-24T11:10:34Z</time>
+    <name>Kontinpaistama</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.300774" lon="28.112904">
+    <time>2014-08-15T09:16:39Z</time>
+    <name>Suojanperä</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.643715" lon="29.041685">
+    <time>2014-08-15T09:21:39Z</time>
+    <name>Koivuniemi</name>
+    <cmt>sijainti epätarkka</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.62513" lon="29.070965">
+    <time>2014-08-15T09:23:20Z</time>
+    <name>Nuortijärvi</name>
+    <cmt>sijainti epätarkka</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.660797" lon="29.105856">
+    <time>2014-08-15T09:25:14Z</time>
+    <name>Näätämö</name>
+    <cmt>sijainti tarkistamatta</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.672943" lon="29.118658">
+    <time>2014-08-15T09:27:05Z</time>
+    <name>Näätämön louhos</name>
+    <sym>Picnic Area</sym>
+  </wpt>
+  <wpt lat="69.713432" lon="28.22415">
+    <time>2014-10-04T16:02:25Z</time>
+    <name>Skiehttsharas</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.726318" lon="27.9034">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Aadolfin kammi - KA</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.710876" lon="28.417801">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Huikkimajoki - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.504662" lon="27.984529">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Iijärvi - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.635223" lon="28.437481">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Iisakkijärvi - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.653282" lon="28.792223">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Kuosnijoki - VK</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.909081" lon="28.212669">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Miutijoki - PK</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.687469" lon="28.538521">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Rousajärvi - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.486069" lon="28.7637">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Sollumusjärvi - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.362343" lon="28.582199">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Suolistaipale - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.782318" lon="28.251471">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Tsaarajärvi - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.865669" lon="28.246611">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Tsuomasjärvi - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="69.862839" lon="27.388">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Vaisjoki - KA</name>
+    <sym>Lodge</sym>
+  </wpt>
+</gpx>

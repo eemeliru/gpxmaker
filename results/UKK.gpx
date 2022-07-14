@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="gpx.py -- https://github.com/tkrajina/gpxpy">
+  <wpt lat="68.453941" lon="28.415359">
+    <time>2012-10-23T15:57:21Z</time>
+    <name>Lutonsilta LA</name>
+    <sym>Picnic Area</sym>
+  </wpt>
+  <wpt lat="68.413536" lon="27.283117">
+    <time>2012-10-23T15:57:21Z</time>
+    <name>Pikku Harrijoki KO</name>
+    <sym>Campground</sym>
+  </wpt>
+  <wpt lat="68.11013" lon="27.43902">
+    <time>2012-10-23T15:57:21Z</time>
+    <name>Sompiojärvi KO</name>
+    <cmt>myös laavu</cmt>
+    <sym>Campground</sym>
+  </wpt>
+  <wpt lat="68.390717" lon="28.062309">
+    <time>2012-10-23T15:57:22Z</time>
+    <name>Aittajärvi LA</name>
+    <sym>Picnic Area</sym>
+  </wpt>
+  <wpt lat="67.862656" lon="29.189907">
+    <time>2012-12-21T10:30:06Z</time>
+    <name>Haukijärvenoja LA</name>
+    <sym>Picnic Area</sym>
+  </wpt>
+  <wpt lat="67.967644" lon="29.361275">
+    <time>2013-06-16T14:58:26Z</time>
+    <name>Kolsakoskenoja LA</name>
+    <cmt>Puucee ja puuvaja. Huollettu.</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.956009" lon="29.372219">
+    <time>2013-06-16T14:59:55Z</time>
+    <name>Saukkosuvanto KO</name>
+    <cmt>Puucee ja puuvaja. Huollettu.</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.952095" lon="29.399426">
+    <time>2013-06-16T15:01:25Z</time>
+    <name>Saukkosuvannonvaara LA</name>
+    <cmt>Puucee ja puuvaja. Huollettu.</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.943146" lon="29.344793">
+    <time>2013-06-16T15:03:06Z</time>
+    <name>Voitinköngäs KO</name>
+    <cmt>Puucee/puuvaja. Huollettu</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.932007" lon="29.322693">
+    <time>2013-06-16T15:04:59Z</time>
+    <name>Alimmainen Hirvashauta KO</name>
+    <cmt>Puucee/puuvaja. Huollettu.</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.898575" lon="29.256388">
+    <time>2013-06-16T15:07:21Z</time>
+    <name>Ylempi Hirvashauta LA</name>
+    <cmt>Puucee ja puuvaja. Huollettu.</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.899673" lon="29.21439">
+    <time>2013-06-16T15:10:07Z</time>
+    <name>Jänkäkoski LA</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.893173" lon="29.179699">
+    <time>2013-06-16T15:11:46Z</time>
+    <name>Kurtsinniska LA</name>
+    <cmt>Puucee ja puuvaja. Huollettu.</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.878685" lon="29.18928">
+    <time>2013-06-16T15:13:36Z</time>
+    <name>Silpakurunsuu KO</name>
+    <cmt>Puucee/puuvaja. Huollettu.</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.873375" lon="29.187895">
+    <time>2013-06-16T15:15:05Z</time>
+    <name>Liemussuvanto LA</name>
+    <cmt>Puucee ja puuvaja. Huollettu.</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.847237" lon="29.156963">
+    <time>2013-06-16T15:17:58Z</time>
+    <name>Vitta-apajanlehto LA</name>
+    <cmt>Puucee/puuvaja. Huollettu.</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.83596" lon="29.150215">
+    <time>2013-06-16T15:19:55Z</time>
+    <name>Kärekelehto LA</name>
+    <cmt>Puucee/puuvaja. Huollettu.</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.932159" lon="29.32271">
+    <time>2014-01-29T11:25:21Z</time>
+    <name>Alimmainen hirvashauta KO</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.838387" lon="28.788851">
+    <time>2014-01-29T11:31:16Z</time>
+    <name>Helluntainiemi KO</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.354607" lon="27.42659">
+    <time>2014-01-31T17:56:50Z</time>
+    <name>Latvakuru KO</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.361771" lon="27.386021">
+    <time>2014-01-31T17:57:43Z</time>
+    <name>Rönkönlampi KO</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.422699" lon="28.39427">
+    <time>2014-02-02T13:16:40Z</time>
+    <name>Alempi Kiertämäjärvi LA</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.416321" lon="28.27231">
+    <time>2014-02-02T13:17:37Z</time>
+    <name>Harrimukka LA</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.083801" lon="28.85013">
+    <time>2014-02-02T13:26:19Z</time>
+    <name>Jussinmurusta LA</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.274727" lon="27.748489">
+    <time>2014-02-02T13:30:14Z</time>
+    <name>Kotaköngäs LA</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.12104" lon="27.32296">
+    <time>2014-02-02T13:36:41Z</time>
+    <name>Nalioja LA</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.113647" lon="27.79043">
+    <time>2014-02-02T13:42:18Z</time>
+    <name>Orponen LA</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.253937" lon="28.06336">
+    <time>2014-02-02T13:45:58Z</time>
+    <name>Pälkkimäoja LA</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.241371" lon="27.701559">
+    <time>2014-02-02T13:49:06Z</time>
+    <name>Salonlampi LA</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.373421" lon="27.98144">
+    <time>2014-02-02T13:51:56Z</time>
+    <name>Siikavuopaja LA</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.28936" lon="27.583929">
+    <time>2014-02-02T13:54:05Z</time>
+    <name>Suomunlatva</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.368103" lon="27.61783">
+    <time>2014-02-02T13:55:29Z</time>
+    <name>Taajoslaavu</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.464539" lon="27.297888">
+    <time>2014-02-04T13:19:33Z</time>
+    <name>Tolosjoen laavu</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.273949" lon="27.450499">
+    <time>2014-02-04T13:28:49Z</time>
+    <name>Kopsuksentien laavu</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.241432" lon="27.70141">
+    <time>2014-02-04T13:32:08Z</time>
+    <name>Kustunlampi laavu</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.330849" lon="27.42687">
+    <time>2014-02-04T13:39:55Z</time>
+    <name>Sivakkaoja laavu</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.271973" lon="28.53021">
+    <time>2014-06-25T11:40:01Z</time>
+    <name>Anterinjoki</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.228989" lon="27.4744">
+    <time>2014-06-25T11:49:26Z</time>
+    <name>Kaptukaislammit</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.18959" lon="27.14221">
+    <time>2014-06-25T11:53:40Z</time>
+    <name>Koiranjuomalampi</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.178032" lon="27.117376">
+    <time>2014-06-25T11:54:20Z</time>
+    <name>Hopiaoja</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.444649" lon="27.520149">
+    <time>2015-11-15T12:57:28Z</time>
+    <name>Palo-ojan kota</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.426109" lon="27.455759">
+    <time>2015-11-15T12:58:42Z</time>
+    <name>Ski Saariselkä</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.396347" lon="28.117359">
+    <time>2015-11-15T13:00:43Z</time>
+    <name>Suomujoen kolttakenttä</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.108612" lon="27.485022">
+    <time>2021-06-06T15:50:46Z</time>
+    <name>Akmeeli</name>
+    <cmt>Akmeelin haudan lähistöllä</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.25045" lon="28.45145">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Anteri - AT</name>
+    <cmt>sauna</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.165871" lon="28.29818">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Hammaskuru - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.413597" lon="27.282801">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Harrioja 3H - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.916786" lon="28.07292">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Hiirula - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.897743" lon="29.26244">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Hirvashauta - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.032883" lon="28.723217">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Härkävaara - AT</name>
+    <cmt>sauna</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.07766" lon="28.371799">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Irtonaisauhti - KA</name>
+    <cmt>Huonossa kunnossa, ei välttämättä yöpymiskelpoinen.</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.384293" lon="28.2509">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Jyrkkävaara - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.923759" lon="27.45558">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Jäkälämaa - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.149658" lon="27.97821">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Karapulju - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.91552" lon="29.224567">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Karhuoja - AT</name>
+    <cmt>Sauna</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.36972" lon="28.42844">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Kiertämäjärvi - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.400002" lon="27.692289">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Kivipää - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.383324" lon="27.79875">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Kulasjoki - PK</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.896858" lon="27.621902">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Kuukkelimaa - AT</name>
+    <cmt>sauna</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.864212" lon="29.197981">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Kärekeoja - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.308922" lon="27.81381">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Lankojärvi - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.209785" lon="28.02335">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Luirojärvi - AT</name>
+    <cmt>Sauna</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.210747" lon="28.02618">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Kuusela - VT</name>
+    <cmt>Sauna</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.209198" lon="28.021299">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Rajan kämppä - AT</name>
+    <cmt>Sauna</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.438766" lon="27.577009">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Luttotupa - PT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.353668" lon="27.55448">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Luulampi - PT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.043938" lon="28.969027">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Manto-oja - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.050751" lon="28.97298">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Mantoselkä - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.899857" lon="29.21007">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Mettopalo - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.258186" lon="28.258369">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Muorravaarakka - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.975578" lon="29.06505">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Naltiojoki - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.31823" lon="27.51292">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Niilanpää - PT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.054047" lon="28.82254">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Peskihaara - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.12822" lon="28.702379">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Peuraselkä - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.96608" lon="28.47192">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Pihtijoki - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.341766" lon="27.887159">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Porttikoski - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.122437" lon="27.37018">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Pyhä-Nattanen - PT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.220901" lon="28.046782">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Raappana - KA</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.873283" lon="29.371103">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Pahasrova - PK</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.383339" lon="27.50205">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Rumakuru - PT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.379631" lon="27.511789">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Rumakuru vanha - PT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.966278" lon="29.435711">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Saiho - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.314438" lon="28.11042">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Sarvioja - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.127831" lon="28.46254">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Siulanruoktu - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.394814" lon="28.153669">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Snellmaninmaja - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.313843" lon="28.08993">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Sudenpesä - VK</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.253532" lon="27.62318">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Suomunruoktu - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.126114" lon="28.563334">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Tahvontupa - AT</name>
+    <cmt>Sauna</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.24295" lon="27.56967">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Tammakkolampi - VT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.083794" lon="28.005251">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Tammikämppä - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.911232" lon="29.029266">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Tikkasen Vieriharju - VK</name>
+    <cmt>sauna</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.213188" lon="27.84376">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Tuiskukuru - AT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.892784" lon="28.539284">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Uittipiekka - AT</name>
+    <cmt>sauna</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.836304" lon="28.81665">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Vallionenä - PK</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.427467" lon="27.569559">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Vellinsärpimä - PT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.030197" lon="29.060566">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Vieriharju - AT</name>
+    <cmt>sauna</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.186378" lon="28.45767">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Vongoiva - VT</name>
+    <cmt>varauskammi</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="67.966064" lon="28.372833">
+    <time>2014-04-15T10:00:00Z</time>
+    <name>Yläharju - PK</name>
+    <cmt>Sauna</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.15303" lon="28.278715">
+    <time>2014-04-16T11:37:29Z</time>
+    <name>Hammaskota - VT</name>
+    <cmt>varauskammi</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.421341" lon="27.43298">
+    <time>2014-06-18T07:16:18Z</time>
+    <name>Kummituskämppä - PT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.421768" lon="27.434">
+    <time>2014-06-18T07:17:10Z</time>
+    <name>Kelo-oja - PT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.394478" lon="27.424339">
+    <time>2014-06-18T07:18:58Z</time>
+    <name>Prospektorin tupa - PT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.385078" lon="27.443605">
+    <time>2014-08-15T10:01:27Z</time>
+    <name>Piispanoja - PT</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.046257" lon="29.189148">
+    <time>2018-01-08T07:12:23Z</time>
+    <name>Rakitsanoja - KA</name>
+    <sym>Lodge</sym>
+  </wpt>
+  <wpt lat="68.313377" lon="27.648142">
+    <time>2021-06-24T16:56:14Z</time>
+    <name>Rautulampi - PT</name>
+    <cmt>Uusi päivätupa rakennettu palaneen tilalle</cmt>
+    <sym>Lodge</sym>
+  </wpt>
+</gpx>
