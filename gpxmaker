@@ -26,7 +26,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Tool for combining and filtering .gpx files.")
     parser.add_argument('--path', '-p', type=str, default='./samples', 
         help="Path to gpx file(s). Defaults to ./samples")
-    parser.add_argument('--include-path', '-i', dest='include', action='store_true', default=False, 
+    parser.add_argument('--include-samples', '-i', dest='include', action='store_true', default=False, 
         help="If custom path is provided, use also files from the ./samples -folder.")
     parser.add_argument('--name', '-n', type=str, default='new', 
         help="Name of the output gpx file. Defaults to 'new' OR chosen template name.")
@@ -36,6 +36,8 @@ def parse_args():
         help="Choose coordinates from already defined templates.")
     parser.add_argument('--save', '-s', choices=['template', 'waypointAT', 'waypointLK', 'custom'], 
         help="Save coordinates as new template or waypoint. Uses --name as template/waypoint name. waypointAT = Autiotuvat, waypointLK = Laavut-kodat.")
+    parser.add_argument('--edit', '-e', action='store_true', default=False,
+        help="Edit single waypoint. Give exact name of waypoint with search name. If name -param is given, changes name. If coordinates are given, changes coordinates.")
     parser.add_argument('--description', '-d', type=str, 
         help="Description for new waypoint. Optional.")
     parser.add_argument('--just-print', dest='printer', action='store_true', default=True, 
@@ -80,6 +82,44 @@ def search_gpx(gpx: gpxpy.gpx.GPX, searched: str):
         pprint(results)
     else:
         print("No matches found.")
+
+def edit_waypoint(gpx: gpxpy.gpx.GPX, options: dict):
+    """Simple waypoint edit from gpx."""
+    for waypoint in gpx.waypoints:
+        if options['searched'].lower() == waypoint.name.lower():
+            try:
+                waypoint.name = options['name']
+            except KeyError:
+                pass
+            try:
+                waypoint.latitude = options['latitude']
+            except KeyError:
+                pass
+            try:
+                waypoint.longitude = options['longitude']
+            except KeyError:
+                pass
+            try: 
+                waypoint.description = options['description']
+                waypoint.comment =  options['description']
+            except KeyError:
+                pass
+            waypoint.time = datetime.now()
+            if verbose:
+                print(f"Edited waypoint {options['searched']} with params {waypoint}")
+    return gpx
+
+def save_waypoint(gpx: gpxpy.gpx.GPX, options: dict):
+    if verbose:
+        print(f"Saving new waypoint with params {options}")
+    gpx.waypoints.append(gpxpy.gpx.GPXWaypoint(
+                    latitude=options['latitude'], 
+                    longitude=options['longitude'], 
+                    time=datetime.now(), 
+                    name=options['name'], 
+                    description=options['description'],
+                    comment=options['description']))
+    return gpx
 
 def filter_coordinates(gpx: gpxpy.gpx.GPX, coordinates: dict):
     """Selects waypoints inside of given coordinates."""
@@ -129,17 +169,17 @@ def main():
     if args.coordinates is not None:
         # save waypoint, assume coordinates are [Latitude, Longitude]
         if args.save == 'waypointAT' or args.save == 'waypointLK' or args.save == 'custom':
-            gpx = gpxpy.gpx.GPX()
             # append coordinates, name, desc to the gpx file. 
             # uses datetime.now() as timestamp.
-            gpx.waypoints.append(
-                gpxpy.gpx.GPXWaypoint(
-                    latitude=args.coordinates[0], 
-                    longitude=args.coordinates[1], 
-                    time=datetime.now(), 
-                    name=name, 
-                    description=args.description,
-                    comment=args.description))
+            waypoint_info = {
+                'latitude': args.coordinates[0], 
+                'longitude': args.coordinates[1], 
+                'time': datetime.now(), 
+                'name': name, 
+                'description': args.description
+            }
+            gpx = save_waypoint(gpxpy.gpx.GPX(), waypoint_info)
+            # save_options(gpx, args.save, printer, path)
             if args.save == 'waypointAT':
                 save_gpx(gpx, 'Autiotuvat', printer, path)
             elif args.save == 'waypointLK':
@@ -178,6 +218,21 @@ def main():
         samples = read_gpxes(path)
         for waypoint in samples.waypoints:
             gpx.waypoints.append(waypoint)
+
+    if args.edit is True:
+        waypoint_info = {
+            'searched': args.search,
+            'time': datetime.now(), 
+            'name': name, 
+            'description': args.description
+        }
+        if args.coordinates is not None:
+            waypoint_info['latitude'] = args.coordinates[0]
+            waypoint_info['longitude'] = args.coordinates[1]
+
+        gpx = edit_waypoint(gpx, waypoint_info)
+
+        raise SystemExit()
 
     if args.search is not None:
         search_gpx(gpx, args.search)
