@@ -1,7 +1,7 @@
 # GPXMaker
 Tool for creating, combining, and filtering .gpx -files (or just .gpx waypoints right now..).
 
-Samples use .gpx -dumps from laavut.org.
+Samples use .gpx -dumps from laavu.org.
 
 ## Installation
 Install required Python libraries:
