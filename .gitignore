@@ -1,1 +1,4 @@
-results/*.gpx
+# no .gpx files to repo
+*.gpx
+# except those in samples directory
+!samples/*.gpx
