@@ -126,18 +126,6 @@ def edit_waypoint(gpx: gpxpy.gpx.GPX, options: dict):
                 print(f"Edited waypoint {options['searched']} with params {waypoint}")
     return gpx
 
-def save_waypoint(gpx: gpxpy.gpx.GPX, options: dict):
-    if verbose:
-        print(f"Saving new waypoint with params {options}")
-    gpx.waypoints.append(gpxpy.gpx.GPXWaypoint(
-                    latitude=options['latitude'], 
-                    longitude=options['longitude'], 
-                    time=datetime.now(), 
-                    name=options['name'], 
-                    description=options['description'],
-                    comment=options['description']))
-    return gpx
-
 def filter_coordinates(gpx: gpxpy.gpx.GPX, coordinates: dict):
     """Selects waypoints inside of given coordinates."""
     filtered = gpxpy.gpx.GPX()
