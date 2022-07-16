@@ -49,6 +49,8 @@ def parse_args():
         "Uses search -param to find existing template/waypoint."
         "Uses name, coordinates, description -params to edit template/waypoint"
         "If param not given, uses existing values.")
+    parser.add_argument('--delete', '-D', choices=['template', 'waypoint'],
+        help="Delete template/waypoint. Searches template/waypoint with name or search --param.")
     parser.add_argument('--description', '-d', type=str, 
         help="Description for new/existing waypoint. Optional.")
     parser.add_argument('--just-print', dest='printer', action='store_true', default=False, 
@@ -140,29 +142,32 @@ def filter_coordinates(gpx: gpxpy.gpx.GPX, coordinates: dict):
 
     return filtered
 
-def edit_waypoint(gpx: gpxpy.gpx.GPX, data: dict):
-    for waypoint in gpx.waypoints:
-        if data['search'].lower() == waypoint.name.lower():
-            try:
-                waypoint.name = data['name']
-            except KeyError:
-                pass
-            try:
-                waypoint.latitude = data['latitude']
-            except KeyError:
-                pass
-            try:
-                waypoint.longitude = data['longitude']
-            except KeyError:
-                pass
-            try:
-                waypoint.description = data['description']
-                waypoint.comment = data['description']
-            except KeyError:
-                pass
-            waypoint.time = data['time']
+def edit_waypoint(gpx: gpxpy.gpx.GPX, data: dict, delete: bool=False):
+    if delete:
+        gpx.waypoints[:] = [wpt for wpt in gpx.waypoints if data['search'].lower() != wpt.name.lower()]
+    else:
+        for waypoint in gpx.waypoints:
+            if data['search'].lower() == waypoint.name.lower():
+                try:
+                    waypoint.name = data['name']
+                except KeyError:
+                    pass
+                try:
+                    waypoint.latitude = data['latitude']
+                except KeyError:
+                    pass
+                try:
+                    waypoint.longitude = data['longitude']
+                except KeyError:
+                    pass
+                try:
+                    waypoint.description = data['description']
+                    waypoint.comment = data['description']
+                except KeyError:
+                    pass
+                waypoint.time = data['time']
 
-            print(f"Waypoint {data['search']} edited with params {data}")
+                print(f"Waypoint {data['search']} edited with params {data}")
     return gpx
 
 def save_template(coordinates: dict, filename: str):
@@ -231,8 +236,6 @@ def main():
         'description': description,
         'comment': description
     }
-    # remove nulls from dict
-    waypoint_data = {k:v for k,v in waypoint_data.items() if v is not None}
 
     if args.coordinates is not None:
         # if we add/edit waypoint, assume coordinates are [Latitude, Longitude]
@@ -246,7 +249,7 @@ def main():
             # append waypoint_data to gpx
             gpx = save_waypoint(waypoint_data)
             save_gpx(gpx, filename, printer)
-            raise SystemExit('Waypoint added successfully.')
+            raise SystemExit(f'Waypoint {name} added successfully.')
         else:
             # assume that the coordinates are [North, South, West, East]
             try:
@@ -282,6 +285,9 @@ def main():
     # read the .gpx files from given path -folder
     gpx = read_gpxes(path, filename)
 
+    # remove nulls from waypoint_data for future usage
+    waypoint_data = {k:v for k,v in waypoint_data.items() if v is not None}
+
     # edit waypoint/template
     if args.edit is not None:
         if args.edit == 'waypoint':
@@ -292,6 +298,19 @@ def main():
         #     save_template(template, name)
         raise SystemExit('Waypoint added successfully.')
 
+    if args.delete is not None:
+        if args.search is None:
+            search = name
+            waypoint_data['search'] = name
+
+        if args.delete == 'waypoint':
+            gpx = edit_waypoint(gpx, waypoint_data, delete=True)
+            save_gpx(gpx, filename, printer, overwrite=True)
+        elif args.delete == 'template':
+            template = Path(f'templates/{search}.yml')
+            template.unlink()
+        
+        raise SystemExit(f'Deleted template/waypoint {search} successfully!')
     # if user wants to include files in /samples -folder
     if args.include:
         samples = read_gpxes(path='/samples')
